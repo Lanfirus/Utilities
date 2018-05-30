@@ -81,7 +81,6 @@ public class DBInitializator {
         statement.executeUpdate(DBStatements.CREATE_TASK_TABLE_STATEMENT);
         statement.executeUpdate(DBStatements.CREATE_PROJECT_ARCHIVE_TABLE_STATEMENT);
         statement.executeUpdate(DBStatements.CREATE_TASK_ARCHIVE_TABLE_STATEMENT);
-        statement.executeUpdate(DBStatements.CREATE_TASK_DEADLINE_TRIGGER);
     }
 
     private void insertUserRecord(String record) throws SQLException{
@@ -100,14 +99,30 @@ public class DBInitializator {
             insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD1_VALUE);
             insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD2_VALUE);
             insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD3_VALUE);
+            insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD4_VALUE);
+            insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD5_VALUE);
+            insertUserRecord(DBStatements.INSERT_EMPLOYEE_RECORD_STATEMENT + DBStatements.INSERT_EMPLOYEE_RECORD6_VALUE);
             insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD1_VALUE);
             insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD2_VALUE);
             insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD3_VALUE);
+            insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD4_VALUE);
+            insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD5_VALUE);
+            insertUserRecord(DBStatements.INSERT_PROJECT_RECORD_STATEMENT + DBStatements.INSERT_PROJECT_RECORD6_VALUE);
             insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD1_VALUE);
             insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD2_VALUE);
             insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD3_VALUE);
             insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD4_VALUE);
             insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD5_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD6_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD7_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD8_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD9_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD10_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD11_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD12_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD13_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD14_VALUE);
+            insertUserRecord(DBStatements.INSERT_TASK_RECORD_STATEMENT + DBStatements.INSERT_TASK_RECORD15_VALUE);
             closeConnectionToDB();
         }
         catch(SQLException e){
